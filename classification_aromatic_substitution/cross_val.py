@@ -23,7 +23,7 @@ if args.model == 'ml_QM_GNN':
     print(args.select_descriptors)
 
 df = pd.read_csv(args.data_path, index_col=0)
-df = df.sample(frac=1, random_state=2)
+df = df.sample(frac=1, random_state=0)
 
 # split df into k_fold groups
 k_fold_arange = np.linspace(0, len(df), args.k_fold+1).astype(int)
