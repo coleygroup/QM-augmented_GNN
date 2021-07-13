@@ -26,7 +26,7 @@ Curated data sets have been included in each of the main directories in a format
 ```
 where smiles corresponds to the reactant smiles and reaction_core indicates the index of the sites/heavy atoms undergoing a change in their bonding situation throughout the reaction (indexing starts from 0). Note that the numbering of the reactant smiles has to be ordered (i.e., the atom at index 0 carries number 1, the atom at index 1 carries number 2 etc.).
 
-In the case of `classification_e2_sn2`, data points are formatted in a similar manner, but now the two reaction cores for the competing data points are included in a single data point:
+In the case of `classification_e2_sn2`, data points are formatted in a similar manner, but now the two reaction cores for the competing reaction pathways are included in a single data point, with the pathway to which the lowest-energy transition state is associated listed first:
 
 ```
 ,reaction_id,smiles,products_run
@@ -43,7 +43,7 @@ In the case of `classification_aromatic_substitution`, data points are formatted
 1,126,[F:1][c:2]1[cH:3][cH:4][c:5]([C:6]([CH2:7][CH2:8][C:9]([OH:10])=[O:11])=[O:12])[cH:13][cH:14]1.[N+:15]([O-:16])([OH:17])=[O:18]>>[F:1][c:2]1[cH:3][cH:4][c:5]([C:6]([CH2:7][CH2:8][C:9]([OH:10])=[O:11])=[O:12])[cH:13][c:14]1[N+:15]([O-:17])=[O:18],[F:1][c:2]1[cH:3][cH:4][c:5]([C:6]([CH2:7][CH2:8][C:9]([OH:10])=[O:11])=[O:12])[cH:13][c:14]1[N+:15]([O-:17])=[O:18].[F:1][c:2]1[cH:3][cH:4][c:5]([C:6]([CH2:7][CH2:8][C:9]([OH:10])=[O:11])=[O:12])[c:13]([N+:15]([O-:17])=[O:18])[cH:14]1,US03931177
 ```
 
-in which, rxn_smiles are the reaction SMILES. And products_run are the potential products (major.minor1.minor2.....).
+in which, rxn_smiles are the full reaction SMILES and products_run are the potential products (major.minor1.minor2.....).
 
 ## Training
 This repository cotains three main directories, each providing two graph neural network models (GNN and ml-QM-GNN), tailored to the considered data set and task, as described in the paper.
