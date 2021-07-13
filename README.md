@@ -26,7 +26,7 @@ Curated data sets have been included in each of the main directories in a format
 ```
 where smiles corresponds to the reactant smiles and reaction_core indicates the index of the sites/heavy atoms undergoing a change in their bonding situation throughout the reaction (indexing starts from 0). Note that the numbering of the reactant smiles has to be ordered (i.e., the atom at index 0 carries number 1, the atom at index 1 carries number 2 etc.).
 
-In the case of `classification_e2_sn2`, data points are formatted in a similar manner, but now the two reaction cores for the competing reaction pathways are included in a single data point, with the pathway to which the lowest-energy transition state is associated listed first:
+In the case of `classification_e2_sn2`, data points are formatted in a similar manner, but now the two reaction cores for the competing reaction pathways are included in a single data point, with the pathway corresponding to the lowest-energy transition state listed first:
 
 ```
 ,reaction_id,smiles,products_run
