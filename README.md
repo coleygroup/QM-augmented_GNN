@@ -46,10 +46,10 @@ In the case of `classification_aromatic_substitution`, data points are formatted
 in which, rxn_smiles are the full reaction SMILES and products_run are the potential products (major.minor1.minor2.....).
 
 ## Training
-This repository cotains three main directories, each providing two graph neural network models (GNN and ml-QM-GNN), tailored to the considered data set and task, as described in the paper.
+This repository contains three main directories, each providing two distinct graph neural network models (GNN and ml-QM-GNN), tailored to the considered data set and task, as described in the paper.
 
 ### GNN
-Conventional graph neural networks that relies only on the machine learned reaction representation of a given reaction. 
+Conventional graph neural networks that rely only on the machine learned reaction representation of a given reaction. 
 To train the model, run:
 ```
 python reactivitiy.py -m GNN --data_path <path to the .csv file> --model_dir <directory to save the trained model> 
@@ -88,6 +88,6 @@ To use the trained model, run:
 python reactivitiy -m <mode> --data_path <path to the predicting .csv file> --model_dir <directory containing the trained model> -p 
 ```
 
-where `data_path` is path to the predicting `.csv` file, whose format is the same as the one discussed. `model_dir` is the directory holding the trained model. 
+where `data_path` is the path to the data `.csv` file, whose format has been discussed above. `model_dir` is the directory holding the trained model. 
 The model must be named as `best_model.hdb5` and stores parameters only. The `model_dir` must also include a `scalers.pickle` under `ml_QM_GNN` mode as discussed in the
 [training](#Training) session.
