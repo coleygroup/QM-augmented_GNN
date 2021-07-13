@@ -37,7 +37,6 @@ In the case of `classification_e2_sn2`, data points are formatted in a similar m
 In the case of `classification_aromatic_substitution`, data points are formatted as:
 
 ```
-,reaction_id,rxn_smiles,products_run
 ,reaction_id,rxn_smiles,products_run,PatentNumber
 0,86,[CH3:1][O:2][C:3](=[O:4])[c:5]1[cH:6][cH:7][c:8]2[c:9]([cH:10]1)[O:11][CH2:12][CH2:13][O:14]2.[N+:15]([O-:16])([OH:17])=[O:18]>C(O)(=O)C>[CH3:1][O:2][C:3](=[O:4])[c:5]1[c:6]([N+:15]([O-:17])=[O:18])[cH:7][c:8]2[c:9]([cH:10]1)[O:11][CH2:12][CH2:13][O:14]2,[CH3:1][O:2][C:3](=[O:4])[c:5]1[c:6]([N+:15]([O-:17])=[O:18])[cH:7][c:8]2[c:9]([cH:10]1)[O:11][CH2:12][CH2:13][O:14]2.[CH3:1][O:2][C:3](=[O:4])[c:5]1[cH:6][cH:7][c:8]2[c:9]([c:10]1[N+:15]([O-:17])=[O:18])[O:11][CH2:12][CH2:13][O:14]2.[CH3:1][O:2][C:3](=[O:4])[c:5]1[cH:6][c:7]([N+:15]([O-:17])=[O:18])[c:8]2[c:9]([cH:10]1)[O:11][CH2:12][CH2:13][O:14]2,US03931179
 1,126,[F:1][c:2]1[cH:3][cH:4][c:5]([C:6]([CH2:7][CH2:8][C:9]([OH:10])=[O:11])=[O:12])[cH:13][cH:14]1.[N+:15]([O-:16])([OH:17])=[O:18]>>[F:1][c:2]1[cH:3][cH:4][c:5]([C:6]([CH2:7][CH2:8][C:9]([OH:10])=[O:11])=[O:12])[cH:13][c:14]1[N+:15]([O-:17])=[O:18],[F:1][c:2]1[cH:3][cH:4][c:5]([C:6]([CH2:7][CH2:8][C:9]([OH:10])=[O:11])=[O:12])[cH:13][c:14]1[N+:15]([O-:17])=[O:18].[F:1][c:2]1[cH:3][cH:4][c:5]([C:6]([CH2:7][CH2:8][C:9]([OH:10])=[O:11])=[O:12])[c:13]([N+:15]([O-:17])=[O:18])[cH:14]1,US03931177
