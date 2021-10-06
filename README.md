@@ -88,5 +88,14 @@ python reactivitiy -m <mode> --data_path <path to the predicting .csv file> --mo
 ```
 
 where `data_path` is the path to the data `.csv` file, whose format has been discussed above. `model_dir` is the directory holding the trained model. 
-The model must be named as `best_model.hdb5` and stores parameters only. The `model_dir` must also include a `scalers.pickle` under `ml_QM_GNN` mode as discussed in the
-[training](#Training) session.
+The model must be named as `best_model.hdf5` and stores parameters only. The `model_dir` must also include a `scalers.pickle` under `ml_QM_GNN` mode as discussed in the
+[training](#Training) section.
+
+## Cross-validating
+To perform a cross-validation, run:
+
+```
+python cross_val.py -m <mode> --data_path <path to the predicting .csv file> --model_dir <directory containing the trained model> --k_fold <number of folds> --sample <number of training points>
+```
+
+where `data_path` is the path to the data `.csv` file, whose format has been discussed above. `model_dir` is the directory holding the trained model.
