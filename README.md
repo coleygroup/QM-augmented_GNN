@@ -98,4 +98,4 @@ To perform a cross-validation, run:
 python cross_val.py -m <mode> --data_path <path to the predicting .csv file> --model_dir <directory containing the trained model> --k_fold <number of folds> --sample <number of training points>
 ```
 
-where `data_path` is the path to the data `.csv` file, whose format has been discussed above. `model_dir` is the directory holding the trained model.
+where `data_path` is the path to the data `.csv` file, whose format has been discussed above. `model_dir` is the directory holding the trained model, and `sample` (optional) is the number of traing points to be sampled from the "original training set", selected for each fold.
