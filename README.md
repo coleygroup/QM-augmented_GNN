@@ -1,6 +1,6 @@
 # QM-augmented_GNN
 
-This repository contains the main code associated with the project "Quantum chemistry augmented neuralnetworks for reactivity prediction: Performance, generalizability and interpretability", cf xxx. Note that each of the graph neural networks presented here are adaptations of the original models developed by Yanfei Guan and co-workers. For more information, see the repository [reactivity_predictions_substitution](https://github.com/yanfeiguan/reactivity_predictions_substitution).
+This repository contains the main code associated with the project [Quantum chemistry augmented neuralnetworks for reactivity prediction: Performance, generalizability and explainability](https://doi.org/10.1063/5.0079574). Note that each of the graph neural networks presented here are adaptations of the original models developed by Yanfei Guan and co-workers. For more information, see the repository [reactivity_predictions_substitution](https://github.com/yanfeiguan/reactivity_predictions_substitution).
 
 ## Requirements
 
