@@ -111,7 +111,7 @@ else:
         predicted.append(out)
 
     predicted = np.concatenate(predicted, axis=0)
-    num_outcomes = [2 for x in test_products]
+    num_outcomes = [len(x.split('.')) for x in test_products]
     rxn_split = np.cumsum(num_outcomes)
     predicted = np.split(predicted, rxn_split)[:-1]
     predicted = [softmax(x.reshape(-1, 1)).reshape(-1).tolist() for x in predicted]
